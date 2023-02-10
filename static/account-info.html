@@ -1,6 +1,6 @@
+﻿
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +8,22 @@
 	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
 	<meta name="author" content="AdminKit">
 	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
-
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
-
 	<link rel="canonical" href="https://demo.adminkit.io/pages-settings.html" />
-
 	<title>Settings | AdminKit Demo</title>
-
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
 	<!-- Choose your prefered color scheme -->
 	<link href="css/light.css" rel="stylesheet">
 	<!-- <link href="css/dark.css" rel="stylesheet"> -->
-
-
 </head>
 <!--
-  HOW TO USE: 
+  HOW TO USE:
   data-theme: default (default), dark, light, colored
   data-layout: fluid (default), boxed
   data-sidebar-position: left (default), right
   data-sidebar-layout: default (default), compact
 -->
-
 <body data-theme="light" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar js-sidebar">
@@ -47,232 +39,224 @@
 						<path d="M20 16L12 20L4 16"></path>
 					</svg>
 				</a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+					<li class="sidebar-item">
+						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Edit Questions</span>
+						</a>
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="osafety.html">Occupational Safety/Health</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="csafety.html">Chemical Safety</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="eprotect.html">Explosion Protection</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="fsafety.html">Fire Safety</a></li>
+						</ul>
+					</li>
 
-
-                <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Pages
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                            <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Edit Questions</span>
-                        </a>
-                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="osafety.html">Occupational Safety/Health</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="csafety.html">Chemical Safety</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="eprotect.html">Explosion Protection</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="fsafety.html">Fire Safety</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="account-info.html">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Account Info</span>
-                        </a>
-                    </li>                    
-                </ul>
-
-                <div class="sidebar-cta">
-                    <div class="sidebar-cta-content">
-                        <strong class="d-inline-block mb-2">SURVEY REGISTRATION</strong>
-                        <div class="mb-3 text-sm">
-                            To have access to this feature, please change your account from Admin priviledges to a normal one.
-                        </div>
-
-                        <div class="d-grid">
-                            <a href="landingpage.html" class="btn btn-outline-primary" target="_blank">Switch Accounts</a>
-                        </div>
-                    </div>
-                </div>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="account-modify.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Modify Accounts</span>
+						</a>
+					</li>
+				</ul>
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">SURVEY REGISTRATION</strong>
+						<div class="mb-3 text-sm">
+							To have access to this feature, please change your account from Admin priviledges to a normal one.
+						</div>
+						<div class="d-grid">
+							<a href="landingpage.html" class="btn btn-outline-primary" target="_blank">Switch Accounts</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</nav>
-
 		<div class="main">
-            <nav class="navbar navbar-expand navbar-light navbar-bg">
-                <a class="sidebar-toggle js-sidebar-toggle">
-                    <i class="hamburger align-self-center"></i>
-                </a>
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
 
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav navbar-align">
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
-                                <img src="img/flags/us.png" alt="English" />
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/flags/us.png" alt="English" width="20" class="align-middle me-1" />
-                                    <span class="align-middle">English</span>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/flags/fi.png" alt="Finnish" width="20" class="align-middle me-1" />
-                                    <span class="align-middle">Finnish</span>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/flags/se.png" alt="Swedish" width="20" class="align-middle me-1" />
-                                    <span class="align-middle">Swedish</span>
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/flags/ee.png" alt="Estonian" width="20" class="align-middle me-1" />
-                                    <span class="align-middle">Estonian</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
-                                <div class="position-relative">
-                                    <i class="align-middle" data-feather="maximize"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded" alt="Charles Hall" />
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
-                                <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="pages-settings.html">
-                                    <i class="align-middle me-1" data-feather="settings"></i> Settings &
-                                    Privacy
-                                </a>
-                                <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Log out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
+						<li class="nav-item dropdown">
+							<a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+								<img src="img/flags/us.png" alt="English" />
+							</a>
+							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/us.png" alt="English" width="20" class="align-middle me-1" />
+									<span class="align-middle">English</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/fi.png" alt="Finnish" width="20" class="align-middle me-1" />
+									<span class="align-middle">Finnish</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/se.png" alt="Swedish" width="20" class="align-middle me-1" />
+									<span class="align-middle">Swedish</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img src="img/flags/ee.png" alt="Estonian" width="20" class="align-middle me-1" />
+									<span class="align-middle">Estonian</span>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="maximize"></i>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded" alt="Charles Hall" />
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="pages-settings.html">
+									<i class="align-middle me-1" data-feather="settings"></i> Settings &
+									Privacy
+								</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			<main class="content">
 				<div class="container-fluid p-0">
 					<div class="row">
-						<div class="col-md-3 col-xl-2">
-
+						<div class="col-md-9 col-xl-4">
 							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title mb-0">Profile Settings</h5>
-								</div>
 
-								<div class="list-group list-group-flush" role="tablist">
-									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#account" role="tab">
-										Account
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#password" role="tab">
-										Password
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Your data
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Delete account
-									</a>
+								<div class="card-header">
+
+
+
+
+
+
+
+
+									<h5 class="card-title mb-0">User Accounts</h5>
+								</div>
+								<div class="card-body">
+									<br>
+									<div class="mb-3 col-md-12">
+										<input type="text" class="form-control" id="inputFirstName" placeholder="Search...">
+									</div>
+									<select multiple size="16" class="form-control">
+										<option>AccountA</option>
+										<option>AccountB</option>
+										<option>AccountC</option>
+										<option>AccountD</option>
+										<option>AccountE</option>
+										<option>AccountF</option>
+										<option>AccountG</option>
+										<option>AccountH</option>
+										<option>AccountI</option>
+										<option>AccountJ</option>
+										<option>AccountK</option>
+										<option>AccountL</option>
+										<option>AccountM</option>
+										<option>AccountN</option>
+										<option>AccountO</option>
+										<option>AccountP</option>
+										<option>AccountQ</option>
+										<option>AccountR</option>
+										<option>AccountS</option>
+										<option>AccountT</option>
+										<option>AccountQ</option>
+										<option>AccountV</option>
+									</select>
+									<br>
+									<button type="submit" class="btn btn-primary">New User</button>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-md-9 col-xl-10">
-							<div class="tab-content">
-								<div class="tab-pane fade show active" id="account" role="tabpanel">
+						<div class="col-md-9 col-xl-8">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Account information</h5>
 
-									<div class="card">
-										<div class="card-header">
 
-											<h5 class="card-title mb-0">Account information</h5>
-										</div>
-										<div class="card-body">
-											<form>
-												<div class="row">
-													<div class="mb-3 col-md-6">
-														<label class="form-label" for="inputFirstName">First name</label>
-														<input type="text" class="form-control" id="inputFirstName" placeholder="First name">
-													</div>
-													<div class="mb-3 col-md-6">
-														<label class="form-label" for="inputLastName">Last name</label>
-														<input type="text" class="form-control" id="inputLastName" placeholder="Last name">
-													</div>
-												</div>
-												<div class="mb-3">
-													<label class="form-label" for="inputEmail4">Email</label>
-													<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-												</div>
-												<div class="mb-3">
-													<label class="form-label" for="inputPassword">Password</label>
-													<input type="text" class="form-control" id="inputPassword" placeholder="-">
-												</div>
-												<div class="mb-3">
-													<label class="form-label" for="inputPassword2">Confirm Password</label>
-													<input type="text" class="form-control" id="inputPassword2" placeholder="-">
-												</div>
-												<div class="row">
-													<div class="mb-3 col-md-4">
-														<label class="form-label" for="inputCountry">Country</label>
-														<select id="inputCountry" class="form-control">
-															<option>Estonia</option>
-															<option selected>Finland</option>
-															<option>USA</option>
-														</select>
-													</div>
-													<div class="mb-3 col-md-4">
-														<label class="form-label" for="inputLanguage">Default language</label>
-														<select id="inputLanguage" class="form-control">
-															<option>Eesti</option>
-															<option selected>English</option>
-															<option>Suomi</option>
-															<option>Svenska</option>
-														</select>
-													</div>
-													<div class="mb-3 col-md-4">
-														<label class="form-label" for="inputAccountType">Account type</label>
-														<select id="inputAccountType" class="form-control">
-															<option selected>User</option>
-															<option>Admin</option>
-														</select>
-													</div>
-												</div>
-												<button type="submit" class="btn btn-primary">Save changes</button>
-											</form>
 
-										</div>
-									</div>
+
+
+
+
+
+
 
 								</div>
-								<div class="tab-pane fade" id="password" role="tabpanel">
-									<div class="card">
-										<div class="card-body">
-											<h5 class="card-title">Password</h5>
-
-											<form>
-												<div class="mb-3">
-													<label class="form-label" for="inputPasswordCurrent">Current password</label>
-													<input type="password" class="form-control" id="inputPasswordCurrent">
-													<small><a href="#">Forgot your password?</a></small>
-												</div>
-												<div class="mb-3">
-													<label class="form-label" for="inputPasswordNew">New password</label>
-													<input type="password" class="form-control" id="inputPasswordNew">
-												</div>
-												<div class="mb-3">
-													<label class="form-label" for="inputPasswordNew2">Verify password</label>
-													<input type="password" class="form-control" id="inputPasswordNew2">
-												</div>
-												<button type="submit" class="btn btn-primary">Save changes</button>
-											</form>
-
+								<div class="card-body">
+									<form>
+										<div class="row">
+											<div class="mb-3 col-md-6">
+												<label class="form-label" for="inputFirstName">First name</label>
+												<input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+											</div>
+											<div class="mb-3 col-md-6">
+												<label class="form-label" for="inputLastName">Last name</label>
+												<input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+											</div>
 										</div>
-									</div>
+										<div class="mb-3">
+											<label class="form-label" for="inputEmail4">Email</label>
+											<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+										</div>
+										<div class="mb-3">
+											<label class="form-label" for="inputPassword">Password</label>
+											<input type="text" class="form-control" id="inputPassword" placeholder="-">
+										</div>
+										<div class="mb-3">
+											<label class="form-label" for="inputPassword2">Confirm Password</label>
+											<input type="text" class="form-control" id="inputPassword2" placeholder="-">
+										</div>
+										<div class="row">
+											<div class="mb-3 col-md-4">
+												<label class="form-label" for="inputCountry">Country</label>
+												<select id="inputCountry" class="form-control">
+													<option>Estonia</option>
+													<option selected>Finland</option>
+													<option>USA</option>
+												</select>
+											</div>
+											<div class="mb-3 col-md-4">
+												<label class="form-label" for="inputLanguage">Default language</label>
+												<select id="inputLanguage" class="form-control">
+													<option>Eesti</option>
+													<option selected>English</option>
+													<option>Suomi</option>
+													<option>Svenska</option>
+												</select>
+											</div>
+											<div class="mb-3 col-md-4">
+												<label class="form-label" for="inputAccountType">Account type</label>
+												<select id="inputAccountType" class="form-control">
+													<option selected>User</option>
+													<option>Admin</option>
+												</select>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-primary">Save changes</button>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</main>
-
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="row text-muted">
@@ -302,9 +286,6 @@
 			</footer>
 		</div>
 	</div>
-
 	<script src="js/app.js"></script>
-
 </body>
-
 </html>
