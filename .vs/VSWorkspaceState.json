@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\static"
+    "\\static",
+    "\\static\\img"
   ],
-  "SelectedNode": "\\static\\landingpage.html",
+  "SelectedNode": "\\static\\results.html",
   "PreviewInSolutionExplorer": false
 }

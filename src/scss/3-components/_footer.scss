@@ -1,5 +1,6 @@
 footer.footer {
   padding: $spacer $spacer*0.875;
+
   direction: ltr;
   @include theme("theme", "background", $footer-bg);
 
